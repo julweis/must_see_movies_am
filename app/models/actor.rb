@@ -5,4 +5,6 @@ class Actor < ApplicationRecord
 
   # Validations
 
+  validates :name, :uniqueness => { :scope => [:dob] }
+
 end
